@@ -1,7 +1,8 @@
+__pycache__/
+*.py[cod]
 env/
 Vendly/__pycache__/
 core/migrations/__pycache__
 core/__pycache__
 items/migrations/__pycache__/
 items/__pycache__/
-__pycache__/
