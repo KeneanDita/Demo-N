@@ -1,5 +1,5 @@
 """
-WSGI config for Demo_N project.
+WSGI config for Vendly project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Demo_N.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Vendly.settings")
 
 application = get_wsgi_application()

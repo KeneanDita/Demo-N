@@ -1,5 +1,5 @@
 """
-URL configuration for Demo_N project.
+URL configuration for Vendly project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -17,13 +17,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-
 from core.views import index, contact
- 
 
 urlpatterns = [
     path("", index, name="index"),
     path("contact/", contact, name="contact"),
     path("admin/", admin.site.urls),
-    
 ]
