@@ -1,2 +1,4 @@
 env/
 Demo_N/__pycache__/
+core/migrations/__pycache__
+core/__pycache__
