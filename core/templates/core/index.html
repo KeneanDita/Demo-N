@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Demo</title>
-</head>
-<body>
-   <div class="px-6 py-6">
-        <h1>Front page</h1>
-   </div>
-</body>
-</html>
+{% extends "core/base.html" %}
+
+{% block title%}
+Welcome
+{% endblock %}
+
+{% block content %}
+<h1>Front page</h1>
+
+{% endblock %}
