@@ -18,6 +18,7 @@
         <a href="#" class="inline-block mt-6 px-6 py-3 text-lg rounded-xl font-semibold bg-teal-500 text-white hover:bg-gray-700 ">Contact Seller</a>
     </div>
 </div>
+{% if item.related_items %}
 <div class="mt-6 px-6 py-12 bg-gray-100 rounded-xl">
     <h2 class="mb-12 text-2xl text-center font-bold">Recommended Items based on your search</h2>
 
@@ -35,4 +36,8 @@
         </div>
         {% endfor %}
     </div>
+{% else %}
+<div class="mt-6 px-6 py-12 bg-gray-100 rounded-xl">
+    <h2 class="mb-12 text-2xl text-center font-bold">No related items found</h2>
+{% endif %}
 {% endblock %}
