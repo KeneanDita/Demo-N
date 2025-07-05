@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from items.models import Item, Category
 from .forms import SignupForm
 
@@ -20,7 +20,7 @@ def signup(request):
         form = SignupForm(request.POST)
         if form.is_valid():
             form.save()
-            return render(request, "core/signup_success.html")
+            return redirect('/login/')
     else:
         form = SignupForm()
     return render(request, "core/signup.html", {"form": form})
